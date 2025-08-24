@@ -1,6 +1,7 @@
 package com.example.taskmate;
 
 import android.content.Intent;
+import android.graphics.PorterDuff;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.Menu;
@@ -14,6 +15,7 @@ import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.widget.Toolbar;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.content.ContextCompat;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -49,6 +51,15 @@ public class MainActivity extends AppCompatActivity {
         // Set up the toolbar as ActionBar
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+
+
+        // Ensure the 3-dot (overflow) menu icon is always visible.
+        // By default, in dark mode the icon may appear black on a dark background,
+        // so we manually apply a white color filter to make it visible.
+        if (toolbar.getOverflowIcon() != null) {
+            int color = ContextCompat.getColor(this, android.R.color.white); // change to black if needed
+            toolbar.getOverflowIcon().setColorFilter(color, PorterDuff.Mode.SRC_ATOP);
+        }
 
         // Initialize RecyclerView adapter and define action listeners
         adapter = new TaskAdapter(taskList, new TaskAdapter.OnTaskActionListener() {
