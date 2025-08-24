@@ -32,10 +32,6 @@ public class SettingActivity extends AppCompatActivity {
         sharedPreferences = getSharedPreferences("settings", MODE_PRIVATE);
         isDarkMode = sharedPreferences.getBoolean("dark_mode", false); // retrieve saved theme
 
-        // Set up Toolbar as ActionBar
-        Toolbar toolbar = findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
-
         // Apply theme before setting the layout
         if (isDarkMode) {
             AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES); // dark mode
@@ -45,6 +41,10 @@ public class SettingActivity extends AppCompatActivity {
 
         // Set layout for this activity
         setContentView(R.layout.activity_setting);
+
+        // Set up Toolbar as ActionBar
+        Toolbar toolbar = findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
 
         // Find the toggle button in layout
         btnToggle = findViewById(R.id.btnToggle);
@@ -87,9 +87,9 @@ public class SettingActivity extends AppCompatActivity {
             Toast.makeText(this, "About clicked", Toast.LENGTH_SHORT).show();
             startActivity(new Intent(this, AboutActivity.class));
             return true;
-        } else if (id == R.id.menu_settings) {
-            // Already in Settings, but restart activity (optional)
-            startActivity(new Intent(this, SettingActivity.class));
+        } else if (id == R.id.home) {
+            // Navigate to MainActivity
+            startActivity(new Intent(this, MainActivity.class));
             return true;
         }
 
