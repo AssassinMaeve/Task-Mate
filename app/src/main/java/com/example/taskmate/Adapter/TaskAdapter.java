@@ -26,8 +26,8 @@ import java.util.ArrayList;
  * like completing, deleting, or editing back to the Activity/Fragment.
  */
 public class TaskAdapter extends RecyclerView.Adapter<TaskAdapter.TaskViewHolder> {
-    private ArrayList<Task> tasks; // List of all tasks
-    private OnTaskActionListener listener; // Listener to handle user actions
+    private final ArrayList<Task> tasks; // List of all tasks
+    private final OnTaskActionListener listener; // Listener to handle user actions
 
     // Constructor to initialize the adapter with task list and listener
     public TaskAdapter(ArrayList<Task> tasks, OnTaskActionListener listener) {
@@ -88,14 +88,6 @@ public class TaskAdapter extends RecyclerView.Adapter<TaskAdapter.TaskViewHolder
     @Override
     public int getItemCount() {
         return tasks.size();
-    }
-
-    /**
-     * Add a new task to the list and update RecyclerView.
-     */
-    public void addTask(Task task) {
-        tasks.add(task);
-        notifyItemInserted(tasks.size() - 1); // Notify RecyclerView of insertion
     }
 
     /**
