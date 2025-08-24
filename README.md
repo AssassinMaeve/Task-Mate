@@ -43,7 +43,7 @@ app/src/main/java/com/example/taskmate/
 ### 1. Clone the Project
 
 ```bash
-git clone https://github.com/yourusername/taskmate.git
+git clone https://github.com/yourusername/Task-Mate.git
 ```
 
 ### 2. Open in Android Studio
