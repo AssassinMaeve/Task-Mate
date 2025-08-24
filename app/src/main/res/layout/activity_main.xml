@@ -12,7 +12,6 @@
         android:layout_height="?attr/actionBarSize"
         android:background="?attr/colorPrimary"
         app:titleTextColor="@android:color/white"
-        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
         android:layout_marginTop="35dp"/>
 
 
@@ -22,22 +21,23 @@
         android:layout_height="wrap_content"
         android:layout_margin="20dp"
         android:fontFamily="sans-serif-black"
-        android:text="Task-Mate"
+        android:text="@string/task_mate"
         android:textSize="60sp" />
 
     <EditText
         android:id="@+id/editTask"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Enter task"
+        android:autofillHints=""
+        android:hint="@string/enter_task"
         android:layout_margin="20dp"/>
 
     <Button
         android:id="@+id/btnAdd"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Add Task"
-        android:layout_marginLeft="20dp"/>
+        android:text="@string/add_task"
+        android:layout_marginStart="20dp"/>
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerView"
