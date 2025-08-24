@@ -1,11 +1,9 @@
----
-
 # 📋 TaskMate – To-Do List App
 
 TaskMate is a simple **Android To-Do List app** built in Java using **Android Studio**
 It lets you add tasks, mark them as completed, edit tasks using a dialog, and navigate between activities with menus.
 
-This project is designed as a **beginner-friendly learning app** for students to understand Android development concepts such as:
+This project is designed as a **beginner-friendly learning app** for students to understand Android development concepts such as
 
 * Activities
 * RecyclerView & Adapters
