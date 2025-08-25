@@ -59,11 +59,15 @@ git clone https://github.com/yourusername/Task-Mate.git
 
 ---
 
-## 🖼️ Screenshots (Optional to add later)
+## 🖼️ Screenshots
 
 * Home Screen
+  ![Uploading image.png…]()
+
 * Edit Task Dialog
+  
 * About Page
+  
 
 ---
 
