@@ -62,7 +62,7 @@ git clone https://github.com/yourusername/Task-Mate.git
 ## 🖼️ Screenshots
 
 * Home Screen
-  ![Uploading image.png…]()
+![Home](app/src/main/res/drawable/HomeSc.png)
 
 * Edit Task Dialog
   
