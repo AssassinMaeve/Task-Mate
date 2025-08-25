@@ -59,18 +59,6 @@ git clone https://github.com/yourusername/Task-Mate.git
 
 ---
 
-## 🖼️ Screenshots
-
-* Home Screen
-  ![Uploading image.png…]()
-
-* Edit Task Dialog
-  
-* About Page
-  
-
----
-
 ## 🧩 Code Walkthrough
 
 ### Task Model (`Task.java`)
